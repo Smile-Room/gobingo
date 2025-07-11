@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoBingo Software Center</title>
+    <link rel="icon" href="vision.ico" type="image/x-icon" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px 20px;
+        }
+
+        header img {
+            width: 80px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+
+        .download-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 400px;
+            margin: 5px auto;
+        }
+
+        .download-btn {
+            background: #00c6ff;
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            font-size: 14px;
+            color: #ddd;
+        }
+ .contact-message-wrapper {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact-message {
+      background-color: #f1f1f1;
+      color: #333;
+      padding: 16px 24px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="vision.ico" alt="GoBingo Logo" />
+        <h1>GoBingo Software Center</h1>
+        <div class="contact-message-wrapper">
+            <h4 class="contact-message" id="contactMessage">
+                <i class="fa fa-phone"></i> ሃሳብ አስተያተት ካለዎት ይደውሉልን —
+                <span id="phoneNumbers">0945178528 | 0941834927</span>
+            </h4>
+        </div>
+    </header>
+
+    <div class="download-container">
+        <button class="download-btn" onclick="downloadFile('1_qurC5GjJoyQmkijI_yyASQ5PzP4K7KA')">🎯 Gobingo Offline 64 bit</button>
+        <button class="download-btn" onclick="downloadFile('FILE_ID_2')">🎯 Gobingo offline 32 bit</button>
+        <button class="download-btn" onclick="downloadFile('1pCTyu6fr8ExZmlIdqs6vy3durRSsjDrg')">🎯 Gobingo online 64 bit</button>
+    </div>
+
+    <footer>© 2025 GoBingo. All rights reserved.</footer>
+
+    <script>
+        function downloadFile(fileId) {
+            const url = `https://drive.google.com/uc?export=download&id=${fileId}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>

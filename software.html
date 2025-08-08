@@ -1,4 +1,132 @@
+
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoBingo Software Center</title>
+    <link rel="icon" href="vision.ico" type="image/x-icon" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 60px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }
+
+        .contact-message-wrapper {
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-message {
+            background-color: #f1f1f1;
+            color: #333;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .download-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 380px;
+            /* Fixed width for balance */
+            margin-top: 15px;
+        }
+
+        .download-btn {
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 12px 20px;
+            /* Bigger padding */
+            font-size: 16px;
+            /* Slightly larger text */
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.3s;
+            width: 100%;
+            /* Full width inside container */
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="vision.ico" alt="GoBingo Logo" />
+        <h1>GoBingo Software Center</h1>
+        <div class="contact-message-wrapper">
+            <h4 class="contact-message">
+                ሃሳብ አስተያተት ካለዎት ይደውሉልን —
+                <span id="phoneNumbers">0945178528 | 0941834927</span>
+            </h4>
+        </div>
+    </header>
+
+    <div class="download-container">
+        <button class="download-btn" onclick="downloadFile('1_qurC5GjJoyQmkijI_yyASQ5PzP4K7KA')">🎯 Gobingo Offline</button>
+        <button class="download-btn" onclick="downloadFile('1TfCx5MraD1q6br0RxV9x5jqA7S1kQSQy')">🎯 Gobingo Offline +
+            stop and start Voice</button>
+        <button class="download-btn" onclick="downloadFile('1pCTyu6fr8ExZmlIdqs6vy3durRSsjDrg')">🎯 Gobingo Online
+            64-bit</button>
+        <button class="download-btn" onclick="downloadFile('FILE_ID_2')">🎯 Anbesa Bingo</button>
+    </div>
+
+    <footer>© 2025 GoBingo. All rights reserved.</footer>
+
+    <script>
+        function downloadFile(fileId) {
+            const url = `https://drive.google.com/uc?export=download&id=${fileId}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -96,9 +224,10 @@
     </header>
 
     <div class="download-container">
-        <button class="download-btn" onclick="downloadFile('1_qurC5GjJoyQmkijI_yyASQ5PzP4K7KA')">🎯 Gobingo Offline 64 bit</button>
-        <button class="download-btn" onclick="downloadFile('FILE_ID_2')">🎯 Gobingo offline 32 bit</button>
+        <button class="download-btn" onclick="downloadFile('1_qurC5GjJoyQmkijI_yyASQ5PzP4K7KA')">🎯 Gobingo Offline </button>
+        <button class="download-btn" onclick="downloadFile('1_qurC5GjJoyQmkijI_yyASQ5PzP4K7KA')">🎯 Gobingo Offline with start-stop voice</button>
         <button class="download-btn" onclick="downloadFile('1pCTyu6fr8ExZmlIdqs6vy3durRSsjDrg')">🎯 Gobingo online 64 bit</button>
+            <button class="download-btn" onclick="downloadFile('FILE_ID_2')">🎯 Anbesa Bingo</button>
     </div>
 
     <footer>© 2025 GoBingo. All rights reserved.</footer>
@@ -111,4 +240,4 @@
     </script>
 </body>
 
-</html>
+</html> -->
